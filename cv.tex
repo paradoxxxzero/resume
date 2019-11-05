@@ -1,19 +1,19 @@
 \documentclass[a4paper,10pt]{article}
-\RequirePackage{color,graphicx}
-\usepackage{marvosym}
-\usepackage{fontspec}
-\usepackage{xunicode,xltxtra,url,parskip}
-\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage[sfdefault,oldstyle]{roboto}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
 \usepackage[big]{layaureo}
 \usepackage{supertabular}
 \usepackage{titlesec}
 \usepackage{hyperref}
+\usepackage{xcolor}
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Roboto}
-\fontspec[Numbers={OldStyle}]{Roboto}
+\definecolor{softBlack}{cmyk}{0, 0, 0, 0.85}
+\color{softBlack}
 
-\definecolor{grey}{rgb}{.3 .3 .3}
 \hypersetup{urlcolor=blue, colorlinks=true}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -63,11 +63,13 @@
 \section{Expériences professionnelles}
 \begin{supertabular}{r|p{11cm}}
   \multicolumn{2}{c}{} \\
-  \emph{Depuis} \textsc{Mars} 2011  & \textbf{pour \textsc{Kozea} à Vaulx en Velin} \\
-  & \emph{Chef de projet / Architecte Python JavaScript} \\
+  \emph{Depuis} \textsc{Mars} 2011  & \textbf{pour \textsc{Kozea} à Lyon} \\
+  & \emph{Architecte Python JavaScript / Responsable pôle innovation R\&D} \\
   & \footnotesize{Participation à la réalisation et au maintient de la plateforme \textbf{pharminfo} d’hébergement de sites internet de pharmacie : \href{https://www.pharminfo.fr}{pharminfo.fr}} \\
-  & \footnotesize{Choix techniques et réécriture de cette plateforme selon une architecture client/serveur avec une partie client léger moderne en React/Redux: \href{https://optiweb.pharminfo.fr}{optiweb.pharminfo.fr}} \\
-  & \footnotesize{Réalisation de diverses bibliothèques open source pour propulser cette nouvelle architecture (\href{https://kozea.github.io/unrest/}{kozea.github.io/unrest}, \href{https://kozea.github.io/formol/}{kozea.github.io/formol}, …)} \\
+  & \footnotesize{Choix techniques pour la refonte de cette usine à sites selon une architecture client/serveur avec une interface moderne : \href{https://optiweb.pharminfo.fr}{optiweb.pharminfo.fr}} \\
+  & \footnotesize{Réécriture de la partie serveur Python devenue API à l’aide de la bibliothèque \href{https://kozea.github.io/unrest/}{kozea.github.io/unrest} créée pour l’occasion} \\
+  & \footnotesize{Réalisation de la partie client React/Redux avec rendu serveur sous Webpack avec développement de bibliothèque \href{https://kozea.github.io/formol/}{kozea.github.io/formol} de génération de formulaire} \\
+  & \footnotesize{Uniformisation de l’architecture des projets de l’entreprise : arborescence, pile technique et script Make unifié} \\
   & \footnotesize{Architecture et développement de la bibliothèque python \textbf{pygal} de génération de graphiques vectoriels : \href{http://www.pygal.org/en/stable/}{pygal.org}} \\
   & \footnotesize{Architecture et développement de la plateforme de débogage web client/serveur pour python \textbf{wdb} : \href{https://github.com/Kozea/wdb}{github.com/Kozea/wdb}} \\
   & \footnotesize{Membre de l’équipe de développement du projet \textbf{Multicorn} bibliothèque C permettant l’inclusion de points d'accès python dans la définition de tables étrangères PostgreSQL : \href{https://multicorn.org/}{multicorn.org}} \\
