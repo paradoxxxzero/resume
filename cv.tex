@@ -19,6 +19,9 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
+\newif\iflong
+% \longtrue
+
 \begin{document}
   \pagestyle{empty}
   \par{\centering
@@ -74,14 +77,14 @@
   \section{Expériences professionnelles}
   \begin{supertabular}{r|p{11cm}}
     \multicolumn{2}{c}{} \\
-    \textsc{Novembre} 2019  & \textbf{pour \textsc{Kozea} à Lyon} \\
+    \textsc{Novembre} 2019  & \textbf{pour \textsc{Kozea} à Lyon} \footnotesize{9 ans} \\
     & \emph{Architecte Python ECMAScript / Responsable pôle innovation R\&D} \\
     & \footnotesize{
       Uniformisation de l’architecture des projets de l’entreprise :
       installation, pile technique, intégration continue et déploiement.
     } \\
     & \footnotesize{
-      Choix techniques pour la refonte de l’usine à site pharminfo.fr
+      Choix techniques pour la refonte complète de l’usine à site pharminfo.fr
       selon une architecture d’application monopage :
       \href{https://optiweb.pharminfo.fr}{optiweb.pharminfo.fr}.
     } \\
@@ -118,40 +121,58 @@
 
     \multicolumn{2}{c}{} \\
 
-    \textsc{Février} 2011 & \textbf{pour \textsc{Objet Direct} à Lyon} \\
+    \textsc{Février} 2011 & \textbf{pour \textsc{Objet Direct} à Lyon} \footnotesize{1 an et demi} \\
       & \emph{Ingénieur étude et développement} \\
       & \footnotesize{Accompagnement de divers clients dans l’univers Java J2EE} \\
-      & \footnotesize{Mission en régie pour \textsc{Cegelec} à Saint Maurice De Beynost} \\
-      % & \emph{Java J2EE, Hibernate et JSF Icefaces Seam} \\
-      % \footnotesize{\textsc{Février} 2011} & \footnotesize{Réalisation du Système d’Aide à la Gestion de Trafic de Vauban. Participation à la mise en place de l’architecture Seam. Réalisation des écrans de l’application en JSF Icefaces.} \\
-      % & \emph{Java J2EE, JBoss, Hibernate, Seam, JSF, Icefaces, Svn, Ant, PostgreSql} \\
-    \footnotesize{\textsc{Mai} 2010} & \footnotesize{Mission en régie pour \textsc{Foederis} à Limonest} \\
-      % & \emph{Java J2EE, Hibernate et Struts} \\
-      % \footnotesize{\textsc{Février 2010}} & \footnotesize{Participation à la réalisation du progiciel intranet de gestion de ressources humaines édité par Foederis. Maintenance de l’application, correction d’anomalies, refactoring de code. Réalisation d’évolutions, IHM / métier / persistance. Rédaction de documentation utilisateur, de documents d’analyse fonctionnelle et de documentation technique.} \\
-      % & \emph{Java J2EE, Tomcat, Hibernate, Struts, Selenium, Svn, Ant, Oracle, SQL Server} \\
-    \footnotesize{\textsc{Janvier} 2010} & \footnotesize{Mission en régie pour \textsc{Cegelec} à Saint Maurice De Beynost} \\
-      % & \emph{Java J2EE, Jasper Reports} \\
-      % \footnotesize{\textsc{Décembre 2009}}  & \footnotesize{Participation au développement de l’application. Développement de rapports sous Jasper Reports et intégration de ces rapports dans un environnement web sous Struts2. Réorganisation des dépendances de librairies pour l’environnement de développement (Ant, Svn).} \\
-      % & \emph{Java J2EE, JBoss, Hibernate, Struts2, Jasper Reports, Svn, Ant, PostgreSql} \\
-    \footnotesize{\textsc{Novembre} 2009} & \footnotesize{Mission au forfait pour le \textsc{Brgm} à Lyon} \\
-      % & \emph{Java J2EE, Struts, XSL/XSLT} \\
-      % \footnotesize{\textsc{Septembre 2009}} & \footnotesize{Participation aux développements de nouvelles fonctionnalités de l’application Géocatalogue (\href{http://www.geocatalogue.fr}{geocatalogue.fr}) backoffice du Géoportail. Refactoring de composants. Intégration de la nouvelle charte graphique du client. Correction d’anomalies.} \\
-      % & \emph{Java J2EE, Tomcat, Hibernate, Struts, Spring, XSL/XSLT, CSS, Velocity, Exalead, Svn, Ant, PostgreSql} \\
+      \footnotesize{\textsc{Mai} 2010} & \footnotesize{Mission en régie pour \textsc{Cegelec} à Saint Maurice De Beynost} \\
+      \iflong
+        & \emph{Étude et développement Java J2EE, Hibernate et JSF Icefaces Seam} \\
+        & \footnotesize{Réalisation du Système d’Aide à la Gestion de Trafic de Vauban. Participation à la mise en place de l’architecture Seam. Réalisation des écrans de l’application en JSF Icefaces.} \\
+        & \emph{Java J2EE, JBoss, Hibernate, Seam, JSF, Icefaces, Svn, Ant, PostgreSql} \\
+      \fi
+    \footnotesize{\textsc{Février} 2010} & \footnotesize{Mission en régie pour \textsc{Foederis} à Limonest} \\
+      \iflong
+        & \emph{Étude et développement Java J2EE, Hibernate et Struts} \\
+        & \footnotesize{Participation à la réalisation du progiciel intranet de gestion de ressources humaines édité par Foederis. Maintenance de l’application, correction d’anomalies, refactoring de code. Réalisation d’évolutions, IHM / métier / persistance. Rédaction de documentation utilisateur, de documents d’analyse fonctionnelle et de documentation technique.} \\
+        & \emph{Java J2EE, Tomcat, Hibernate, Struts, Selenium, Svn, Ant, Oracle, SQL Server} \\
+        \footnotesize{\textsc{Décembre} 2009} & \footnotesize{Mission en régie pour \textsc{Cegelec} à Saint Maurice De Beynost} \\
+        & \emph{Étude et développement Java J2EE, Jasper Reports} \\
+        & \footnotesize{Participation au développement de l’application. Développement de rapports sous Jasper Reports et intégration de ces rapports dans un environnement web sous Struts2. Réorganisation des dépendances de librairies pour l’environnement de développement (Ant, Svn).} \\
+        & \emph{Java J2EE, JBoss, Hibernate, Struts2, Jasper Reports, Svn, Ant, PostgreSql} \\
+      \fi
+    \footnotesize{\textsc{Septembre} 2009} & \footnotesize{Mission au forfait pour le \textsc{Brgm} à Lyon} \\
+      \iflong
+        & \emph{Étude et développement Java J2EE, Struts, XSL/XSLT} \\
+        & \footnotesize{Participation aux développements de nouvelles fonctionnalités de l’application Géocatalogue (\href{http://www.geocatalogue.fr}{geocatalogue.fr}) backoffice du Géoportail. Refactoring de composants. Intégration de la nouvelle charte graphique du client. Correction d’anomalies.} \\
+        & \emph{Java J2EE, Tomcat, Hibernate, Struts, Spring, XSL/XSLT, CSS, Velocity, Exalead, Svn, Ant, PostgreSql} \\
+      \fi
 
     \multicolumn{2}{c}{} \\
 
-    \textsc{Juillet} 2009 & \textbf{pour \textsc{Objet Direct} à Lyon} \\
+    \textsc{Janvier} 2009 & \textbf{pour \textsc{Objet Direct} à Lyon} \footnotesize{6 mois} \\
       & \emph{Projet de fin d'étude de conception et développement Java, GWT} \\
-      % \footnotesize{\textsc{Décembre} 2008}& \footnotesize{Conception et développement d’un modeleur de diagramme UML open source en client léger Java, GWT. (Disponible à l’adresse \href{http://code.google.com/p/gwtuml/}{code.google.com/p/gwtuml}).} \\
-      % & \emph{Java, GWT, JavaScript, UML, Svn, Ant, Google code} \\
-    \footnotesize{\textsc{Septembre} 2008} & \textbf{pour l’\textsc{Atih} à Lyon} \\
+      \iflong
+        & \footnotesize{Conception et développement d’un modeleur de diagramme UML open source en client léger Java, GWT. (Disponible à l’adresse \href{http://code.google.com/p/gwtuml/}{code.google.com/p/gwtuml}).} \\
+        & \emph{Java, GWT, JavaScript, UML, Svn, Ant, Google code} \\
+      \fi
+
+    \multicolumn{2}{c}{} \\
+
+    \textsc{Mai} 2008 & \textbf{pour l’\textsc{Atih} à Lyon} \footnotesize{4 mois} \\
       & \emph{Stage de conception et développement C\# .Net} \\
-      % \footnotesize{\textsc{Mai} 2008} & \footnotesize{Conception et développement de l’application DOMEVIH (DOssier MEdical du Virus de l’Immunodéficience Humaine) en client lourd C\# / .Net 2.0 pour l’agence ATIH (Agence Technique de l’Information sur l’Hospitalisation). Prestation réalisée dans le cadre d’un stage à temps plein au sein d’Euriware.} \\
-      % & \emph{C\#, .Net, Visual Source Safe, PostgreSql} \\
-    \footnotesize{\textsc{Août} 2007} & \textbf{pour la \textsc{Filière Ingénieur-Entreprendre} au Campus de la Doua à Lyon} \\
+      \iflong
+        & \footnotesize{Conception et développement de l’application DOMEVIH (DOssier MEdical du Virus de l’Immunodéficience Humaine) en client lourd C\# / .Net 2.0 pour l’agence ATIH (Agence Technique de l’Information sur l’Hospitalisation). Prestation réalisée dans le cadre d’un stage à temps plein au sein d’Euriware.} \\
+        & \emph{C\#, .Net, Visual Source Safe, PostgreSql} \\
+      \fi
+
+    \multicolumn{2}{c}{} \\
+
+    \textsc{Juin} 2007 & \textbf{pour la \textsc{Filière Ingénieur-Entreprendre} au Campus de la Doua} \footnotesize{2 mois} \\
       & \emph{Stage de développement PHP5} \\
-      % \footnotesize{\textsc{Juin} 2007} & \footnotesize{Développement d’une application web en PHP5 (objet) comprenant la mise à disposition d’un annuaire d’artisans interactif avec rating, blog, forum et services.} \\
-      % & \emph{PHP5, MySQL, HTML, CSS, CVS} \\
+      \iflong
+        & \footnotesize{Développement d’une application web en PHP5 (objet) comprenant la mise à disposition d’un annuaire d’artisans interactif avec rating, blog, forum et services.} \\
+        & \emph{PHP5, MySQL, HTML, CSS, CVS} \\
+      \fi
   \end{supertabular} \\
 
   \section{Réalisations}
