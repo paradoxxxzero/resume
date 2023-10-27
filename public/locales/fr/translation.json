@@ -1,0 +1,83 @@
+{
+  "bio": {
+    "title": "Personal Information",
+    "age": "Âge",
+    "age_value": "{{age}} ans",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "website": "Site internet"
+  },
+  "profil": {
+    "title": "Profile",
+    "description": "Développeur full stack Python / JavaScript",
+    "xp": "<0>{{ n }} ans</0> d’expérience en conception réalisation de projets informatique",
+    "xp_lang": "<0>{{ n }} ans</0> en Python / JavaScript",
+    "xp_lib": "<0>{{ n }} ans</0> en React",
+    "school": "Ingénieur diplômé de l’INSA de Lyon, département informatique avec félicitations du jury."
+  },
+  "tech": {
+    "title": "Compétences techniques",
+    "langs": "Langages",
+    "libs": "Bibliothèques",
+    "servers": "Serveurs",
+    "tools": "Outils",
+    "dbs": "Bases de données",
+    "systems": "Systèmes"
+  },
+  "course": {
+    "title": "Formation et Langues",
+    "first": "INSA de Lyon premier cycle",
+    "second": "INSA de Lyon second cycle département informatique",
+    "lang": "Anglais",
+    "lang_level": "Courant"
+  },
+  "xp": {
+    "title": "Expériences professionnelles",
+    "cofounder": "Cofondateur, CEO et Développeur full stack",
+    "freelance": "Consultant Freelance / Développeur Odoo",
+    "architect": "Architecte Python JavaScript / Responsable pôle innovation R&D",
+    "engineer": "Ingénieur étude et développement",
+    "eap": {
+      "mission1": "Création de la société Expertise Art et Patrimoine avec Gaël Favier",
+      "mission2": "Réalisation d’une plateforme d’inventaire et de gestion de collections d’objets d’art",
+      "mission3": "Développement d’un serveur d’API en Python avec Flask et SQLAlchemy",
+      "mission4": "Développement d’une application en JavaScript avec React Redux Material UI",
+      "mission5": "Création d’un outil de visualisation de photos 360",
+      "mission6": "Hébergement en bare metal, monitoring, maintenance et support",
+      "mission7": "Réalisation d’une landing page en React SSG :"
+    },
+    "akretion": {
+      "mission1": "Conception et développement de modules communautaires Odoo pour différents clients finaux",
+      "mission2": "Particulièrement sur les modules d’achat, vente, gestion de stock et gestion de produits",
+      "mission3": "Participation au développement de la solution de vente en ligne basée sur odoo : Shopinvader",
+      "mission4": "Accompagnement en réalisation et industrialisation de site e-commerce Odoo en nuxt.js"
+    },
+    "kozea": {
+      "mission1": "Uniformisation de l’architecture des projets de l’entreprise : installation, pile technique, intégration continue et déploiement",
+      "mission2": "Choix techniques pour la refonte complète de l’usine à site pharminfo.fr selon une architecture d’application monopage :",
+      "mission3": "Transformation de la partie serveur Python en une API REST JSON",
+      "mission4": "Réalisation de la partie client en React / Redux avec SSR sous Webpack et Koa",
+      "mission5": "Aide à la conception de l’interface orientée expérience utilisateur",
+      "mission6": "Participation à la mise en place d’un fonctionnement en Holacratie",
+      "mission7": "Participation à la réalisation et au maintient de la plateforme pharminfo.fr d’hébergement de sites internet de pharmacie :",
+      "mission8": "Réalisation d’une plateforme de groupement de pharmaciens, d’un site de formation en e-learning, d’une application Android de réservation d’ordonnance et d’une plateforme de gestion de prise de rendez-vous médecin"
+    },
+    "od": "Accompagnement de divers clients dans l’univers Java J2EE"
+  },
+  "production": {
+    "title": "Réalisations",
+    "coxeter_explorer": "Outil de visualisation des groupes de Coxeter sphériques, euclidiens et hyperboliques en dimension N",
+    "formol": "Bibliothèque React d’édition de données arborescentes basée sur les formulaires HTML5",
+    "unrest": "Générateur d’API REST JSON extensibles à partir de modèles de données SQLAlchemy",
+    "anakata": "Outil de visualisation d’objets géométriques en dimension 4 développé en JavaScript avec Three.js",
+    "butterfly": "Implémentation web d’un terminal Linux basé sur WebSocket",
+    "pygal": "Bibliothèque Python de génération de graphiques vectoriels",
+    "kalong": "Débogueurs Python avec interface web",
+    "multicorn": "Bibliothèque C permettant l’inclusion de points d’accès Python dans la définition de tables étrangères PostgreSQL",
+    "system_monitor": "Extension de suivi des ressources système pour Gnome Shell"
+  },
+  "for": "pour",
+  "in": "à",
+  "today": "Aujourd'hui"
+}

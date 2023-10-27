@@ -35,6 +35,7 @@ export default function Definition({ term, definition, wide }) {
           margin-left: 1em;
           ${wide
             ? `
+            font-size: .9em;
             margin-bottom: 1.5em; `
             : ""}
         `}

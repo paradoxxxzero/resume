@@ -24,7 +24,10 @@ export default function ThemeSwitcher({ mode, onChange }) {
   return (
     <aside
       css={css`
-        position: fixed;
+        position: absolute;
+        @media (min-width: 900px) {
+          position: fixed;
+        }
         top: 0;
         right: 0;
         cursor: pointer;

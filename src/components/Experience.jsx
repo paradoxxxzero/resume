@@ -28,7 +28,7 @@ export default function Experience({ from, to, client, job, missions }) {
         <time>{to}</time>
         <time
           css={css`
-            font-size: 0.85em;
+            font-size: 0.75em;
           `}
         >
           {from}

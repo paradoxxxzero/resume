@@ -1,0 +1,83 @@
+{
+  "bio": {
+    "title": "Personal Information",
+    "age": "Age",
+    "age_value": "{{age}} y.o.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Web Site"
+  },
+  "profil": {
+    "title": "Profil",
+    "description": "Full Stack Python / JavaScript Developper",
+    "xp": " <0>{{ n }} years</0> of experience in IT project design and development.",
+    "xp_lang": "<0>{{ n }} years</0> in Python / JavaScript",
+    "xp_lib": "<0>{{ n }} years</0> in React",
+    "school": "Computer Science Engineer's Degree at INSA de Lyon with honours."
+  },
+  "tech": {
+    "title": "Technical Skills",
+    "langs": "Languages",
+    "libs": "Libraries",
+    "servers": "Servers",
+    "tools": "Tools",
+    "dbs": "Databases",
+    "systems": "Systems"
+  },
+  "course": {
+    "title": "Formation et Langues",
+    "first": "INSA de Lyon Bachelor's Degree",
+    "second": "INSA de Lyon Engineer's Degree in Computer Science",
+    "lang": "French",
+    "lang_level": "Native"
+  },
+  "xp": {
+    "title": "Work Experience",
+    "cofounder": "Cofounder, CEO and Full Stack Developper",
+    "freelance": "Freelance Consultant / Odoo Developper",
+    "architect": "Python JavaScript Architect / R&D Innovation Manager",
+    "engineer": "Research And Development Engineer",
+    "eap": {
+      "mission1": "Expertise Art et Patrimoine company creation with Gaël Favier",
+      "mission2": "Artwork inventory and collection management platform development",
+      "mission3": "API backend development in Python with Flask and SQLAlchemy",
+      "mission4": "Frontend development in React with Redux and Material UI",
+      "mission5": "360 photos visualization tool development",
+      "mission6": "Bare metal hosting, monitoring, maintenance and support",
+      "mission7": "SSG Landing Page creation in React:"
+    },
+    "akretion": {
+      "mission1": "Odoo community modules design and development for various end customers",
+      "mission2": "Specifically on purchase, sale, stock and product management modules",
+      "mission3": "Participation in the development of the online sales solution based on odoo: Shopinvader",
+      "mission4": "Guidance in the realization and industrialization of Odoo e-commerce site in nuxt.js"
+    },
+    "kozea": {
+      "mission1": "Uniformization of the company's projects architecture: installation, technical stack, continuous integration and deployment",
+      "mission2": "Technical choices for the complete redesign of the pharminfo.fr website according to a single page application architecture:",
+      "mission3": "Transformation of the Python server part into a JSON REST API",
+      "mission4": "Client part development in React / Redux with SSR under Webpack and Koa",
+      "mission5": "Help with the design of the user experience oriented interface",
+      "mission6": "Participation in the implementation of a Holacracy operating mode",
+      "mission7": "Participation in the realization and maintenance of the pharminfo.fr hosting platform for pharmacy websites:",
+      "mission8": "Creation of a platform for grouping pharmacists, an e-learning training site, an Android application for booking prescriptions and a doctor's appointment management platform"
+    },
+    "od": "Accompaniment of various clients in the Java J2EE universe"
+  },
+  "production": {
+    "title": "Productions",
+    "coxeter_explorer": "Coxeter group visualization tool for spherical, euclidean and hyperbolic groups in N dimension",
+    "formol": "React library for editing tree data based on HTML5 forms",
+    "unrest": "Extensible JSON REST API generator from SQLAlchemy data models",
+    "anakata": "4D mesh visualization tool developed in JavaScript with Three.js",
+    "butterfly": "WebSocket based Linux terminal web implementation",
+    "pygal": "Python library for generating vector graphics charts",
+    "kalong": "Python debuggers with web interface",
+    "multicorn": "C library allowing the inclusion of Python access points in the definition of PostgreSQL foreign tables",
+    "system_monitor": "Gnome Shell system resource monitoring extension"
+  },
+  "for": "for",
+  "in": "in",
+  "today": "Today"
+}

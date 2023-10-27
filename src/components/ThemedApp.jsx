@@ -3,6 +3,7 @@ import { ThemeProvider } from "@emotion/react";
 import { useEffect, useState } from "react";
 import App from "./App";
 import ThemeSwitcher from "./ThemeSwitcher";
+import LangSwitcher from "./LangSwitcher";
 
 const light = {
   colors: {
@@ -60,6 +61,7 @@ export default function ThemedApp() {
 
   return (
     <ThemeProvider theme={mode == "dark" ? dark : light}>
+      <LangSwitcher />
       <App />
       <ThemeSwitcher mode={mode} onChange={setMode} />
     </ThemeProvider>

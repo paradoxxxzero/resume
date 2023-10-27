@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { Global, css, useTheme } from "@emotion/react";
+import { Trans, useTranslation } from "react-i18next";
 import Section from "./Section";
 import Definitions from "./Definitions";
 import Experiences from "./Experiences";
@@ -12,6 +13,7 @@ export default function App() {
       (365 * 24 * 60 * 60 * 1000)
   );
   const year = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -71,24 +73,24 @@ export default function App() {
       >
         <h1>Florian Mounier</h1>
       </header>
-      <Section title="Informations personnelles">
+      <Section title={t("bio.title")}>
         <Definitions
           values={{
-            Âge: <>{age} ans</>,
-            Adresse: "Lyon, France",
-            Téléphone: "+33 6 89 36 32 19",
-            Email: (
+            [t("bio.age")]: t("bio.age_value", { age }),
+            [t("bio.address")]: "Lyon, France",
+            [t("bio.phone")]: "+33 6 89 36 32 19",
+            [t("bio.email")]: (
               <Link href="mailto:mounier.florian@gmail.com">
                 mounier.florian@gmail.com
               </Link>
             ),
-            "Site internet": <Link>florian.mounier.dev</Link>,
+            [t("bio.website")]: <Link>florian.mounier.dev</Link>,
             Github: <Link>github.com/paradoxxxzero</Link>,
           }}
         />
       </Section>
 
-      <Section title="Profil">
+      <Section title={t("profil.title")}>
         <p
           css={css`
             margin-left: 3em;
@@ -97,175 +99,168 @@ export default function App() {
             }
           `}
         >
-          <strong>Développeur full stack Python / JavaScript</strong>
+          <strong>{t("profil.description")}</strong>
           <br />
-          <strong>{year - 2009} ans</strong> d’expérience en conception
-          réalisation de projets informatique
+          <Trans i18nKey="profil.xp">
+            <strong>{{ n: year - 2009 }} y</strong> ...
+          </Trans>
           <br />
-          <strong>{year - 2011} ans</strong> en Python / JavaScript,{" "}
-          <strong>{year - 2015} ans</strong> en React / Redux
+          <Trans i18nKey="profil.xp_lang">
+            <strong>{{ n: year - 2011 }} y</strong> ...
+          </Trans>{" "}
+          <Trans i18nKey="profil.xp_lib">
+            <strong>{{ n: year - 2015 }} y</strong> ...
+          </Trans>
           <br />
-          Ingénieur diplômé de l’INSA de Lyon, département informatique avec
-          félicitations du jury.
+          {t("profil.school")}
         </p>
       </Section>
 
-      <Section title="Compétences techniques">
+      <Section title={t("tech.title")}>
         <Definitions
           values={{
-            Langages: "Python, JavaScript, HTML5, CSS3, SQL",
-            Bibliothèques:
+            [t("tech.langs")]: "Python, JavaScript, HTML5, CSS3, SQL",
+            [t("tech.libs")]:
               "React, Redux, Flask, Jinja2, SQLAlchemy, MUI, Three.js",
-            Serveurs: "NGINX, uWSGI, Express, Koa",
-            Outils:
+            [t("tech.servers")]: "NGINX, uWSGI, Express, Koa",
+            [t("tech.tools")]:
               "Git, Github, Shell, Vite, Webpack, Poetry, Yarn, Make, GitLab CI",
-            "Base de données": "PostgreSQL, sqlite",
-            Systèmes: "ArchLinux, Ubuntu/Debian, Windows, Android",
+            [t("tech.dbs")]: "PostgreSQL, sqlite",
+            [t("tech.systems")]: "ArchLinux, Ubuntu/Debian, Windows, Android",
           }}
         />
       </Section>
 
-      <Section title="Formation et Langues">
+      <Section title={t("course.title")}>
         <Definitions
           values={{
-            "2009 − 2006": "INSA de Lyon second cycle département informatique",
-            "2006 − 2004": "INSA de Lyon premier cycle",
-            Anglais: "Courant",
+            "2009 − 2006": t("course.second"),
+            "2006 − 2004": t("course.first"),
+            [t("course.lang")]: "Courant",
           }}
         />
       </Section>
 
-      <Section title="Expériences professionnelles">
+      <Section title={t("xp.title")}>
         <Experiences
           values={[
             {
-              from: "Décembre 2019",
-              to: "Aujourd’hui",
-              client: "pour Expertise Art et Patrimoine à Lyon",
-              job: "Cofondateur, CEO et Développeur full stack",
+              from: 2019,
+              to: t("today"),
+              client: `${t("for")} Expertise Art et Patrimoine ${t("in")} Lyon`,
+              job: t("xp.cofounder"),
               missions: [
-                "Création de la société Expertise Art et Patrimoine avec Gaël Favier",
-                "Réalisation de la plateforme d’inventaire et de gestion de collections d’objets d’art",
-                "Développement d’un serveur d’API en Python avec Flask et SQLAlchemy",
-                "Développement d’une application en JavaScript avec React Redux Material UI",
-                "Création d’un outil de visualisation de photos 360",
-                "Hébergement en bare metal, monitoring, maintenance et support",
+                t("xp.eap.mission1"),
+                t("xp.eap.mission2"),
+                t("xp.eap.mission3"),
+                t("xp.eap.mission4"),
+                t("xp.eap.mission5"),
+                t("xp.eap.mission6"),
                 <>
-                  Réalisation d’une landing page en React SSG:{" "}
-                  <Link>eap-expertise.fr</Link>
+                  {t("xp.eap.mission7")} <Link>eap-expertise.fr</Link>
                 </>,
               ],
             },
             {
-              from: "Septembre 2021",
-              to: "Aujourd’hui",
-              client: "pour Akretion à Lyon",
-              job: "Consultant Freelance / Développeur Odoo",
+              from: 2021,
+              to: t("today"),
+              client: `${t("for")} Akretion ${t("in")} Lyon`,
+              job: t("xp.freelance"),
               missions: [
-                "Conception et développement de modules communautaires Odoo pour différents clients finaux",
-                "Particulièrement sur les modules d’achat, vente, gestion de stock et gestion de produits",
-                "Participation au développement de la solution de vente en ligne basée sur odoo : Shopinvader",
-                "Accompagnement en réalisation et industrialisation de site e-commerce Odoo en nuxt.js",
+                t("xp.akretion.mission1"),
+                t("xp.akretion.mission2"),
+                t("xp.akretion.mission3"),
+                t("xp.akretion.mission4"),
               ],
             },
             {
-              from: "Janvier 2016",
-              to: "Novembre 2019",
-              client: "pour Kozea à Lyon",
-              job: "Architecte Python JavaScript / Responsable pôle innovation R&D",
+              from: 2016,
+              to: 2019,
+              client: `${t("for")} Kozea ${t("in")} Lyon`,
+              job: t("xp.architect"),
               missions: [
-                "Uniformisation de l’architecture des projets de l’entreprise : installation, pile technique, intégration continue et déploiement",
+                t("xp.kozea.mission1"),
                 <>
-                  Choix techniques pour la refonte complète de l’usine à site
-                  pharminfo.fr selon une architecture d’application monopage :{" "}
-                  <Link>optiweb.pharminfo.fr</Link>
+                  {t("xp.kozea.mission2")} <Link>optiweb.pharminfo.fr</Link>
                 </>,
-                "Transformation de la partie serveur Python en une API REST JSON",
-                "Réalisation de la partie client en React / Redux avec SSR sous Webpack et Koa",
-                "Aide à la conception de l’interface orientée expérience utilisateur",
-                "Participation à la mise en place d’un fonctionnement en Holacratie",
+                t("xp.kozea.mission3"),
+                t("xp.kozea.mission4"),
+                t("xp.kozea.mission5"),
+                t("xp.kozea.mission6"),
               ],
             },
             {
-              from: "Mars 2011",
-              to: "Décembre 2015",
-              client: "pour Kozea à Vaulx-en-velin",
-              job: "Ingénieur étude et développement",
+              from: 2011,
+              to: 2015,
+              client: `${t("for")} Kozea ${t("in")} Vaulx-en-velin`,
+              job: t("xp.engineer"),
               missions: [
                 <>
-                  Participation à la réalisation et au maintient de la
-                  plateforme pharminfo.fr d’hébergement de sites internet de
-                  pharmacie : <Link>www.pharminfo.fr</Link>
+                  {t("xp.kozea.mission7")} <Link>www.pharminfo.fr</Link>
                 </>,
-                "Réalisation d’une plateforme de groupement de pharmaciens, d’un site de formation en e-learning, d’une application Android de réservation d’ordonnance et d’une plateforme de gestion de prise de rendez-vous médecin",
+                t("xp.kozea.mission8"),
               ],
             },
             {
-              from: "Janvier 2009",
-              to: "Février 2011",
-              client: "pour Objet Direct (Viseo) à Lyon",
-              job: "Ingénieur étude et développement",
-              missions: [
-                "Accompagnement de divers clients dans l’univers Java J2EE",
-              ],
+              from: 2009,
+              to: 2011,
+              client: `${t("for")} Objet Direct (Viseo) ${t("in")} Lyon`,
+              job: t("xp.engineer"),
+              missions: [t("xp.od")],
             },
           ]}
         />
       </Section>
 
-      <Section title="Réalisations">
+      <Section title={t("production.title")}>
         <Definitions
           wide
           values={{
             "Coxeter Explorer": (
               <>
-                Outil de visualisation des groupes de Coxeter sphériques,
-                euclidiens et hyperboliques en dimension N
+                {t("production.coxeter_explorer")}
                 <br />
                 <Link>florian.mounier.dev/coxeter-explorer</Link>
               </>
             ),
             Formol: (
               <>
-                Bibliothèque React d’édition de données arborescentes basée sur
-                les formulaires HTML5
+                {t("production.formol")}
                 <br />
                 <Link>kozea.github.io/formol</Link>
               </>
             ),
             Unrest: (
               <>
-                Générateur d’API REST JSON extensibles à partir de modèles de
-                données SQLAlchemy
+                {t("production.unrest")}
                 <br />
                 <Link>kozea.github.io/unrest</Link>
               </>
             ),
             AnakataGL: (
               <>
-                Outil de visualisation d’objets géométriques en dimension 4
-                développé en JavaScript avec Three.js
+                {t("production.anakata")}
                 <br />
                 <Link>florian.mounier.dev/anakataGL</Link>
               </>
             ),
             Butterfly: (
               <>
-                Implémentation web d’un terminal Linux basé sur WebSocket
+                {t("production.butterfly")}
                 <br />
                 <Link>github.com/paradoxxxzero/butterfly</Link>
               </>
             ),
             Pygal: (
               <>
-                Bibliothèque Python de génération de graphiques vectoriels
+                {t("production.pygal")}
                 <br />
                 <Link>www.pygal.org</Link>
               </>
             ),
             "Wdb/Kalong": (
               <>
-                Débogueurs Python avec interface web
+                {t("production.kalong")}
                 <br />
                 <Link>github.com/Kozea/wdb</Link>
                 <br />
@@ -274,15 +269,14 @@ export default function App() {
             ),
             Multicorn: (
               <>
-                Bibliothèque C permettant l’inclusion de points d’accès python
-                dans la définition de tables étrangères PostgreSQL
+                {t("production.multicorn")}
                 <br />
                 <Link>multicorn.org</Link>
               </>
             ),
             "System Monitor": (
               <>
-                Extension de suivi des ressources système pour Gnome Shell
+                {t("production.system_monitor")}
                 <br />
                 <Link>
                   github.com/paradoxxxzero/gnome-shell-system-monitor-applet
