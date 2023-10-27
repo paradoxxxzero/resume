@@ -1,6 +1,6 @@
 {
   "bio": {
-    "title": "Personal Information",
+    "title": "Informations personnelles",
     "age": "Âge",
     "age_value": "{{age}} ans",
     "address": "Adresse",
@@ -58,7 +58,7 @@
       "mission2": "Choix techniques pour la refonte complète de l’usine à site pharminfo.fr selon une architecture d’application monopage :",
       "mission3": "Transformation de la partie serveur Python en une API REST JSON",
       "mission4": "Réalisation de la partie client en React / Redux avec SSR sous Webpack et Koa",
-      "mission5": "Aide à la conception de l’interface orientée expérience utilisateur",
+      "mission5": "Aide à la conception de l’interface dans une démarche orientée expérience utilisateur",
       "mission6": "Participation à la mise en place d’un fonctionnement en Holacratie",
       "mission7": "Participation à la réalisation et au maintient de la plateforme pharminfo.fr d’hébergement de sites internet de pharmacie :",
       "mission8": "Réalisation d’une plateforme de groupement de pharmaciens, d’un site de formation en e-learning, d’une application Android de réservation d’ordonnance et d’une plateforme de gestion de prise de rendez-vous médecin"

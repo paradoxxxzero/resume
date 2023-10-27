@@ -121,7 +121,7 @@ export default function App() {
           values={{
             [t("tech.langs")]: "Python, JavaScript, HTML5, CSS3, SQL",
             [t("tech.libs")]:
-              "React, Redux, Flask, Jinja2, SQLAlchemy, MUI, Three.js",
+              "React, Redux, Flask, Jinja2, SQLAlchemy, MUI, Three.js, Vue.js",
             [t("tech.servers")]: "NGINX, uWSGI, Express, Koa",
             [t("tech.tools")]:
               "Git, Github, Shell, Vite, Webpack, Poetry, Yarn, Make, GitLab CI",
@@ -136,7 +136,7 @@ export default function App() {
           values={{
             "2009 − 2006": t("course.second"),
             "2006 − 2004": t("course.first"),
-            [t("course.lang")]: "Courant",
+            [t("course.lang")]: t("course.lang_level"),
           }}
         />
       </Section>
@@ -147,7 +147,12 @@ export default function App() {
             {
               from: 2019,
               to: t("today"),
-              client: `${t("for")} Expertise Art et Patrimoine ${t("in")} Lyon`,
+              client: (
+                <Link href="https://www.eap-expertise.fr">
+                  Expertise Art et Patrimoine
+                </Link>
+              ),
+              l10n: "Lyon",
               job: t("xp.cofounder"),
               missions: [
                 t("xp.eap.mission1"),
@@ -157,14 +162,15 @@ export default function App() {
                 t("xp.eap.mission5"),
                 t("xp.eap.mission6"),
                 <>
-                  {t("xp.eap.mission7")} <Link>eap-expertise.fr</Link>
+                  {t("xp.eap.mission7")} <Link>www.eap-expertise.fr</Link>
                 </>,
               ],
             },
             {
               from: 2021,
               to: t("today"),
-              client: `${t("for")} Akretion ${t("in")} Lyon`,
+              client: <Link href="https://akretion.com/">Akretion</Link>,
+              l10n: "Lyon",
               job: t("xp.freelance"),
               missions: [
                 t("xp.akretion.mission1"),
@@ -176,7 +182,8 @@ export default function App() {
             {
               from: 2016,
               to: 2019,
-              client: `${t("for")} Kozea ${t("in")} Lyon`,
+              client: <Link href="https://www.kozea.fr/">Kozea</Link>,
+              l10n: "Lyon",
               job: t("xp.architect"),
               missions: [
                 t("xp.kozea.mission1"),
@@ -192,7 +199,8 @@ export default function App() {
             {
               from: 2011,
               to: 2015,
-              client: `${t("for")} Kozea ${t("in")} Vaulx-en-velin`,
+              client: <Link href="https://www.kozea.fr/">Kozea</Link>,
+              l10n: "Vaulx-en-velin",
               job: t("xp.engineer"),
               missions: [
                 <>
@@ -204,7 +212,10 @@ export default function App() {
             {
               from: 2009,
               to: 2011,
-              client: `${t("for")} Objet Direct (Viseo) ${t("in")} Lyon`,
+              client: (
+                <Link href="https://www.viseo.com/">Objet Direct (Viseo)</Link>
+              ),
+              l10n: "Lyon",
               job: t("xp.engineer"),
               missions: [t("xp.od")],
             },

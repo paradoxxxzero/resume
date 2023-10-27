@@ -2,7 +2,7 @@
   "bio": {
     "title": "Personal Information",
     "age": "Age",
-    "age_value": "{{age}} y.o.",
+    "age_value": "{{age}}",
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
@@ -42,26 +42,26 @@
       "mission1": "Expertise Art et Patrimoine company creation with Gaël Favier",
       "mission2": "Artwork inventory and collection management platform development",
       "mission3": "API backend development in Python with Flask and SQLAlchemy",
-      "mission4": "Frontend development in React with Redux and Material UI",
-      "mission5": "360 photos visualization tool development",
+      "mission4": "Frontend development in React Redux with Material UI",
+      "mission5": "Development of a 360 degrees photo visualizer",
       "mission6": "Bare metal hosting, monitoring, maintenance and support",
-      "mission7": "SSG Landing Page creation in React:"
+      "mission7": "SSG landing Page creation in React:"
     },
     "akretion": {
       "mission1": "Odoo community modules design and development for various end customers",
       "mission2": "Specifically on purchase, sale, stock and product management modules",
-      "mission3": "Participation in the development of the online sales solution based on odoo: Shopinvader",
-      "mission4": "Guidance in the realization and industrialization of Odoo e-commerce site in nuxt.js"
+      "mission3": "Participation in the development of Shopinvader: the e-commerce solution based on odoo",
+      "mission4": "Guidance in the realization and industrialization of an Odoo backed e-commerce site in nuxt.js"
     },
     "kozea": {
       "mission1": "Uniformization of the company's projects architecture: installation, technical stack, continuous integration and deployment",
-      "mission2": "Technical choices for the complete redesign of the pharminfo.fr website according to a single page application architecture:",
-      "mission3": "Transformation of the Python server part into a JSON REST API",
-      "mission4": "Client part development in React / Redux with SSR under Webpack and Koa",
-      "mission5": "Help with the design of the user experience oriented interface",
+      "mission2": "Technical choices for the complete redesign of the pharminfo.fr website according to a SPA architecture:",
+      "mission3": "Migration of the old Python application into a JSON REST API",
+      "mission4": "Front development in React / Redux with Webpack and Koa for SSR",
+      "mission5": "Help with the design of the UX oriented interface",
       "mission6": "Participation in the implementation of a Holacracy operating mode",
-      "mission7": "Participation in the realization and maintenance of the pharminfo.fr hosting platform for pharmacy websites:",
-      "mission8": "Creation of a platform for grouping pharmacists, an e-learning training site, an Android application for booking prescriptions and a doctor's appointment management platform"
+      "mission7": "Development and maintenance of the pharminfo.fr hosting platform for pharmacy websites:",
+      "mission8": "Creation of a platform for pharmacy groups, an e-learning training site, an Android application for booking prescriptions and a doctor's appointment management platform"
     },
     "od": "Accompaniment of various clients in the Java J2EE universe"
   },
@@ -74,7 +74,7 @@
     "butterfly": "WebSocket based Linux terminal web implementation",
     "pygal": "Python library for generating vector graphics charts",
     "kalong": "Python debuggers with web interface",
-    "multicorn": "C library allowing the inclusion of Python access points in the definition of PostgreSQL foreign tables",
+    "multicorn": "C library allowing Python embedding in PostgreSQL foreign data wrappers",
     "system_monitor": "Gnome Shell system resource monitoring extension"
   },
   "for": "for",

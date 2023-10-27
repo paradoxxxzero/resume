@@ -11,7 +11,7 @@ export default function LangSwitcher() {
     <aside
       css={css`
         position: absolute;
-        @media (min-width: 900px) {
+        @media (min-width: 1024px) {
           position: fixed;
         }
         top: 0;

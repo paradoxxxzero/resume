@@ -15,6 +15,7 @@ export default function Section({ title, children }) {
         <h2
           css={css`
             margin: 0.5em 0;
+            font-size: 1.33em;
           `}
         >
           {title}

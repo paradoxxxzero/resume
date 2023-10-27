@@ -1,8 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css, useTheme } from "@emotion/react";
+import { useTranslation } from "react-i18next";
 
-export default function Experience({ from, to, client, job, missions }) {
+export default function Experience({ from, to, client, l10n, job, missions }) {
   const theme = useTheme();
+  const { t } = useTranslation();
   return (
     <>
       <dt
@@ -40,9 +42,26 @@ export default function Experience({ from, to, client, job, missions }) {
           margin-bottom: 0.5em;
         `}
       >
-        <span>{client}</span>
-        <br />
         <strong>{job}</strong>
+        <br />
+        <span
+          css={css`
+            font-size: 0.85em;
+            color: ${theme.colors.muted};
+          `}
+        >
+          {`${t("for")} `}
+        </span>
+        {client}
+        <span
+          css={css`
+            font-size: 0.85em;
+            color: ${theme.colors.muted};
+          `}
+        >
+          {` ${t("in")} ${l10n}`}
+        </span>
+
         <br />
         <ul
           css={css`

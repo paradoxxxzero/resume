@@ -21,7 +21,7 @@ export default function Definition({ term, definition, wide }) {
           @media (max-width: 600px) {
             border-right: none;
             padding-right: 0;
-            border-bottom: 1px solid ${theme.colors.muted};
+            margin-bottom: 0;
           }
           `
             : ""}
@@ -33,6 +33,11 @@ export default function Definition({ term, definition, wide }) {
       <dd
         css={css`
           margin-left: 1em;
+
+          @media (max-width: 600px) {
+            margin-bottom: 0.5em;
+          }
+
           ${wide
             ? `
             font-size: .9em;

@@ -15,12 +15,13 @@ export default function Experiences({ values }) {
         padding: 0;
       `}
     >
-      {values.map(({ from, to, client, job, missions }) => (
+      {values.map(({ from, to, client, l10n, job, missions }) => (
         <Experience
           key={from}
           from={from}
           to={to}
           client={client}
+          l10n={l10n}
           job={job}
           missions={missions}
         />
